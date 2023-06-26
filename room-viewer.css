@@ -1,0 +1,39 @@
+.room-hierarchy-viewer {
+	padding: 0.5em;
+	overflow-y: auto;
+}
+.room-hierarchy-viewer details > :not(summary) {
+	padding-left: 1em;
+	position: relative;
+}
+.room-hierarchy-viewer details > :not(summary):before {
+	position: absolute;
+	height: 100%;
+	left: 0.25em;
+	top: 0;
+	width: 1em;
+	border-left: 1px solid currentColor;
+	opacity: 0.1;
+	content: "";
+	display: block;
+}
+.room-hierarchy-viewer details {
+	padding-bottom: 0.25em;
+}
+.room-hierarchy-viewer details > div {
+	line-height: 1.25;
+}
+.room-hierarchy-viewer details[open] > summary + * {
+	padding-top: 0.25em;
+}
+.room-hierarchy-viewer details[open] > summary {
+	--margin-bottom: 0.25em;
+}
+.room-hierarchy-viewer .color-square {
+	display: inline-block;
+	border: 1px solid currentColor;
+	width: 0.8em;
+	height: 0.8em;
+	vertical-align: top;
+	vertical-align: text-top;
+}

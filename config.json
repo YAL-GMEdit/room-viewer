@@ -1,0 +1,6 @@
+{
+	"name": "room-viewer",
+	"description": "Shows simple dumps of rooms inside GMEdit",
+	"stylesheets": ["room-viewer.css"],
+	"scripts": ["room-viewer.js"]
+}
